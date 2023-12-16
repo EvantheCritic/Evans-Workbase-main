@@ -1,0 +1,327 @@
+body {
+  min-width: 800px;
+  background-color: #696969;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #333399, #ff00cc);  
+  margin:0px;
+}
+
+
+#trapezoid {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+  border: 80px solid rgba(0,0,0,0);
+  border-top: 0 solid;
+  border-bottom: 100px solid rgba(1, 1, 1, .4);
+  -webkit-border-radius: 20px 20px 0 0;
+  border-radius: 20px 20px 0 0;
+  font: normal 100%/normal Arial, Helvetica, sans-serif;
+  color: rgba(0,0,0,0.7);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+  margin-top:-53px;
+  width: 900px;
+  position: relative;
+  transition: all 0.7s ease;
+  padding-left:7%;
+}
+
+#trapezoid a, .subnavbtn {
+ -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+}
+
+.sub-home {
+  display: none;
+  position: absolute;
+  right: 0;
+  left: 0; 
+
+  z-index: 1;   
+  transform: perspective(-10px);
+}
+
+#trapezoid:hover .sub-home {
+  justify-content: center;
+  margin-top: 53px;
+}
+
+.navbar {
+  position: sticky;
+  top: 142px;
+  display:flex;
+  overflow:hidden;
+  justify-content: center;
+  height: 100px;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: #FFF;
+  text-align: center;
+  padding: 14px 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  transition: all 0.5s ease;
+}
+
+.navbar a:hover{
+  background:#8CA6DB;
+  color: black;
+  border-radius:5px;
+}
+
+.register,
+.login {
+    background: linear-gradient(to right, #0000ff, #ffd400); 
+	color: #FFF;
+	font-family: Arial, sans-serif; 
+    border-radius: 19px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px;
+	margin: auto;
+    text-align: center;
+}
+
+.form-register {
+    text-align: center;
+	font-size: 16px;
+	padding: 12px;
+}
+
+#form-title {
+	color: #000;
+    margin-bottom: 10px;
+}
+
+.register input[type="text"],
+.register input[type="email"],
+.register input[type="tel"],
+.register input[type="password"],
+.login input[type="email"],
+.login input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.register input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+	margin-top: 10px;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.error-message {
+    color: red;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.success-message {
+    color: green;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+#toggle-link {
+    margin-top: 10px;
+}
+
+.editButton {
+  background-color: #df0000;  /* Green */
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.deleteButton {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.bills {
+	color: #FFF;
+	width: 400px;
+	margin: auto;
+}
+
+section  {
+  margin:0em 10em 10em 10em;
+  padding:3em 10em 3em 10em;
+}
+
+h1{
+  position: sticky;
+  top: 0;
+  display: flex;
+  overflow: hidden;
+  color: #FFF; 
+  background: linear-gradient(to right, #0000ff, #ffd400); 
+  font-family: 'Helvetica Neue', sans-serif; 
+  font-size: 68px; 
+  letter-spacing: -1px; 
+  justify-content: center;
+  padding: 32px;
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+  font-size: 40px; 
+  font-family: Arial, sans-serif; 
+  color: #FFF; 
+}
+
+.subHeader {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  gap: 30px;
+  margin-bottom: 20px; 
+  border-bottom: 1px solid #ddd; 
+  padding-bottom: 10px; 
+}
+
+h4 {
+	font-size: 24px;
+	font-family: Arial, sans-serif; 
+}
+
+.addNew {
+  font-size: 28px; 
+  font-family: Arial, sans-serif; 
+  text-decoration: none;
+  background-color: #007bff;
+  color: white; 
+  padding: 16px 24px;
+  border-radius: 4px;
+}
+
+.addNew:hover {
+  background-color: #0056b3;
+}
+
+p {
+  color: #000; 
+  font-family: 'Calibri', sans-serif; 
+  font-size: 25px; 
+  line-height: 1.5;
+}
+
+hr {
+  background-color: #000;
+}
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 50px; /* Adjust the gap between cards as needed */
+  max-width: 1300px; /* Set a max width for the container */
+  margin: 0 auto; /* Center the container */
+}
+
+.card {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif; /* Set font family */
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.card-title {
+  font-size: 42px;
+  margin: 0;
+}
+
+.card-info {
+  font-size: 16px;
+}
+
+.card-info ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  padding-left: 10px;
+}
+
+.card-info li {
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+.card-footer {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+}
+
+table {
+  background-color: #FFF;
+  border-collapse: collapse;
+  width: 70%;
+  margin: auto;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 18px;
+}
+
+.schedule {
+	width: 800px;
+}
+
+.buttons {
+	display: flex;
+	justify-content: center;
+	gap: 6px;
+}
+
+/* Apply styles to table headers */
+th {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border: 1px solid #666;
+}
+
+/* Apply styles to table cells */
+td {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.available {
+   background-color: green;
+}
+.unavailable {
+   background-color: blue;
+}
